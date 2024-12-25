@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for user input -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="textPersonName" />
+
+    <!-- RadioGroup with two RadioButtons -->
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <!-- CheckBox for subscription -->
+    <CheckBox
+        android:id="@+id/subscribeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscribe to Newsletter" />
+
+    <!-- AutoCompleteTextView for selecting a country -->
+    <AutoCompleteTextView
+        android:id="@+id/countryAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select your country" />
+
+    <!-- ImageButton for clear action -->
+    <ImageButton
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:contentDescription="Clear" />
+
+    <!-- ToggleButton for enabling/disabling options -->
+    <ToggleButton
+        android:id="@+id/enableToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Enabled"
+        android:textOff="Disabled" />
+
+    <!-- Button for submitting the form -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

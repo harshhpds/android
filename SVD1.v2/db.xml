@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Name input field -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="text" />
+
+    <!-- Email input field -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Age input field -->
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:inputType="number" />
+
+    <!-- Insert Data button -->
+    <Button
+        android:id="@+id/buttonInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Data" />
+
+    <!-- Display Data button -->
+    <Button
+        android:id="@+id/buttonDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Data" />
+
+    <!-- Results TextView -->
+    <TextView
+        android:id="@+id/textViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results will appear here"
+        android:textSize="16sp" />
+
+    <!-- Connection Status TextView -->
+    <TextView
+        android:id="@+id/textViewConnectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database is Ready"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark" />
+
+</LinearLayout>

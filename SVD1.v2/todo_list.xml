@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!--<resources>
+    <string name="app_name">Calender</string>
+    <string name="enter_a_task">/enter a task</string>
+    <string name="add_task">Add task</string>
+</resources> -->
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_a_task"
+        tools:ignore="Autofill,TextFields" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_task" />
+
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

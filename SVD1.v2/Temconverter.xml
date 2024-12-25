@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="#D0E4F5">
+
+    <!-- Left side: Dropdown, Input, Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Dropdown for temperature units -->
+        <Spinner
+            android:id="@+id/tempUnitSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/select_unit" /> <!-- <string name="select_unit">Select Unit</string> -->
+
+        <!-- Input field for temperature -->
+        <EditText
+            android:id="@+id/tempInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter temperature"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp" />
+
+        <!-- Label for conversion buttons -->
+        <TextView
+            android:id="@+id/convertLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert to"
+            android:layout_marginTop="16dp" />
+
+        <!-- Conversion buttons -->
+        <Button
+            android:id="@+id/toCelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celsius"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/toFahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/toKelvin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelvin"
+            android:layout_marginTop="8dp" />
+
+        <!-- Clear button -->
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <!-- Right side: Result Display -->
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Output"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="center_vertical"
+        android:padding="20dp" />
+</LinearLayout>
